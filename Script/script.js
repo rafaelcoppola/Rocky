@@ -1,3 +1,4 @@
+//menu hamburguer
 (function() {
     var hamburger = {
         navToggle: document.querySelector('.nav-toggle'),
