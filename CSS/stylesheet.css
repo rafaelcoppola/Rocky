@@ -99,7 +99,7 @@ textarea {
 	justify-content: space-between;
 	align-items: center;
 }
-.links > a { /* > pegou um atributo dentro da div links*/
+.links > a {
 	margin-left: 2rem; 
 	font-weight: 700;
 	font-size: 1rem;
@@ -155,7 +155,6 @@ textarea {
 .tec-implementation {
 	background-image: url("../Imagens/services-image-3.png");
 }
-/**/
 .card { /*configuração dos card de serviços*/
 	box-shadow: 0 2px 10px rgb(0 0 0 / 25%);
 	background-size: cover;
@@ -175,7 +174,6 @@ textarea {
 .image3 {
 	background-image: url("../Imagens/differentials-image-3.png");
 }
-/**/
 .card2 { /*configurção dos cards diferenciais*/
 	box-shadow: 0 2px 10px rgb(0 0 0 / 25%);
 	background-size: cover;
@@ -277,9 +275,6 @@ textarea {
   background-color: rgb(61, 61, 61);
 
 }
-
-
-
 
 
 @media screen and (max-width: 1050px) {
@@ -392,9 +387,7 @@ textarea {
   .send-button {
     margin: 30px 5% 0 5%;
   }
-
-
-
+  /* menu hamburguer*/
   .nav {
     display: block;
     -webkit-transition: left 0.5s ease;
@@ -404,7 +397,7 @@ textarea {
     transition: left 0.5s ease;
     background-color: rgb(0 0 0 / 90%);
     color: white;
-    height: 35%;
+    height: 18rem;
     left: -30rem;
     padding: 5rem 0 1rem 1rem;
     position: fixed;
@@ -412,11 +405,11 @@ textarea {
     width: 12rem;
     z-index: 1;
     border-radius: 0 20px 20px 0;
-} 
-.nav.expanded {
-  left: 0;
-}  
-.nav ul {
+  } 
+  .nav.expanded {
+    left: 0;
+  }  
+  .nav ul {
     position: absolute;
     top: 55%;
     -webkit-transform: translateY(-50%);
@@ -427,8 +420,8 @@ textarea {
     padding: 0;
     text-align: center;
 
-}
-.nav-toggle {
+  }
+  .nav-toggle {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
@@ -438,11 +431,11 @@ textarea {
     top: 2rem;
     width: 2rem;
     z-index: 2;
-}
-.nav-toggle:hover {
-  opacity: 0.8;
-}
-.nav-toggle .nav-toggle-bar,  .nav-toggle .nav-toggle-bar::after,  .nav-toggle .nav-toggle-bar::before {
+  }
+  .nav-toggle:hover {
+    opacity: 0.8;
+  }
+  .nav-toggle .nav-toggle-bar,  .nav-toggle .nav-toggle-bar::after,  .nav-toggle .nav-toggle-bar::before {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -457,33 +450,31 @@ textarea {
     content: '';
     height: 0.3rem;
     width: 100%;
-}  
-.nav-toggle .nav-toggle-bar { 
-  margin-top: 0;
-}  
-.nav-toggle .nav-toggle-bar::after { 
-  margin-top: 0.8rem;
-}  
-.nav-toggle .nav-toggle-bar::before { 
-  margin-top: -0.8rem;
-}  
-.nav-toggle.expanded .nav-toggle-bar {
+  }  
+  .nav-toggle .nav-toggle-bar { 
+    margin-top: 0;
+  }  
+  .nav-toggle .nav-toggle-bar::after { 
+    margin-top: 0.8rem;
+  }  
+  .nav-toggle .nav-toggle-bar::before { 
+    margin-top: -0.8rem;
+  }  
+  .nav-toggle.expanded .nav-toggle-bar {
     background: transparent;
   }  
-.nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+  .nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
     background: white;
     margin-top: 0;
-}  
-.nav-toggle.expanded .nav-toggle-bar::after {
+  }  
+  .nav-toggle.expanded .nav-toggle-bar::after {
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-} 
-.nav-toggle.expanded .nav-toggle-bar::before {
+  } 
+  .nav-toggle.expanded .nav-toggle-bar::before {
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
- }
+  }
 }
-
-
